@@ -34,8 +34,8 @@ A simple web application built with **Flask** and **Bootstrap** that lets users 
 #### 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/top-ten-movies.git
-cd top-ten-movies
+git clone https://github.com/bowaleos/mytoptenmovies.git
+cd mytoptenmovies
 ```
 
 #### 2. **Create a virtual environment and activate it**
