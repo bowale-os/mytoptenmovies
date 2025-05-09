@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Movie{% endblock %}
+
+{% block content %}
+<div class="content">
+    <h1 class="heading">Rate the Movie</h1>
+    <form action="{{ url_for('rate')}}" method = "POST">
+        {{ form.hidden_tag() }}
+        <input type="hidden" name="title" value="{{ title }}">
+        <input type="hidden" name="release_date" value="{{ release_date }}">
+        <input type="hidden" name="overview" value="{{ overview }}">
+
+
+        <p>
+            {{form.rating.label}} <br> {{form.rating}}
+            {% for err in form.rating.errors %}
+            <span style="color:red"> {{ err }}</span>
+            {% endfor %}
+        </p>
+
+
+        <p>
+            {{form.review.label}} <br> {{form.review}}
+            {% for err in form.rating.errors %}
+            <span style="color:red"> {{ err }}</span>
+            {% endfor %}
+        </p>
+        {{form.submit}}
+
+    </form>
+</div>
+{% endblock %}
