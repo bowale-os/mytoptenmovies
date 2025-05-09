@@ -118,9 +118,7 @@ View your curated list of top 10 favorite movies.
 ### 📌 To-Do / Future Enhancements
 
 * [ ] User authentication (login/logout)
-* [ ] Pagination for search results
 * [ ] Movie posters from TMDb
-* [ ] Responsive Top 10 display using Bootstrap cards
 
 ---
 
